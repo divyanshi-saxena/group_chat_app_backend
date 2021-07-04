@@ -42,6 +42,8 @@ const server = new ApolloServer({
   subscriptions: {
     path: '/subscriptions'
   },
+  introspection: true,
+  playground: true
 })
 
 // app.get('*', (req, res) => {
